@@ -4,5 +4,4 @@ Rails.application.routes.draw do
   root 'home#index'
   get '/downloads/resume', to: 'home#downloadResume'
   get '/blog', to: 'home#blog'
-
 end
