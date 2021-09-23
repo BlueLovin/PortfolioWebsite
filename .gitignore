@@ -46,3 +46,10 @@ config/local_env.yml
 app/controllers/blogposts_controller.rb 
 config/database.yml
 config/secrets.yml
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity

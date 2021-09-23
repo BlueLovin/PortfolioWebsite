@@ -5,6 +5,6 @@ class HomeController < ApplicationController
 
     end
     def downloadResume
-        send_file "#{Rails.root}/public/Resume.pdf", type: "application/pdf", x_sendfile: true
+        send_file "#{Rails.root}/public/Matthew Jury Resume.pdf", type: "application/pdf", x_sendfile: true
     end
 end
