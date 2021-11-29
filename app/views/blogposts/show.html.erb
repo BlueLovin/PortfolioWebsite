@@ -14,8 +14,6 @@
         <!--Page Title-->
         <title><%= @blogpost.title %> - Matthew Jury's Blog</title>
 
-        <link rel="stylesheet" href="css/blue-color.css">
-
         <%= stylesheet_link_tag 'plugins.css' %>
         <%= stylesheet_link_tag 'blue-color.css' %>
         <%= stylesheet_link_tag 'style-dark.css' %>
@@ -48,14 +46,11 @@
         </div>
         <!--Preloader End-->
 
-
         <div id="page">
-
 
             <!--Header Start-->
             <header>
                 <div class="header-content">
-
                     <!--Mobile Header-->
                     <div class="header-mobile">
                         <a class="header-toggle"><i class="fas fa-bars"></i></a>
@@ -66,17 +61,17 @@
                     <div class="header-main" data-simplebar>
                         <div class="image-container">
                             <h2 class="header-name">Matthew Jury</h2>
-                            <img src="img/profile-img.jpg" alt="profile-pic">
+                            <img src="/img/profile-img.jpg" alt="profile-pic">
                         </div>
 
                         <!--Nav Menus-->
                         <nav class="nav-menu">
                             <ul>
-                                <li><a href="#home" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-home"></i></span>Home </a> </li>
-                                <li><a href="#about" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-user"></i></span>About Me</a></li>
+                                <li><a href="/#home" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-home"></i></span>Home </a> </li>
+                                <li><a href="/#about" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-user"></i></span>About Me</a></li>
                                 <li><a href="https://www.linkedin.com/in/matthew-jury2/"><span class="nav-menu-icon"><i class="lnr lnr-license"></i></span>Resume</a></li>
-                                <li><a href="#portfolio" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></li>
-                                <li><a href="#blog" class="pt-link active" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-book"></i></span>Blog</a></li>
+                                <li><a href="/#portfolio" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></li>
+                                <li><a href="/#blog" class="pt-link active" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-book"></i></span>Blog</a></li>
                             </ul>
                         </nav>
 
@@ -136,6 +131,3 @@
 
     </body>
 </html>
-
-<%= link_to 'Edit', edit_blogpost_path(@blogpost) %> |
-<%= link_to 'Back', blogposts_path %>
