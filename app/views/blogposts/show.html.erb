@@ -20,11 +20,10 @@
         <!--Main Styles Css-->
         <%# <link rel="stylesheet" href="css/style-dark.css"> %>
         <!--Color Css-->
-        <%# <link rel="stylesheet" href="css/blue-color.css"> %>
+        <link rel="stylesheet" href="css/blue-color.css">
 
         <%= stylesheet_link_tag 'plugins.css' %>
         <%= stylesheet_link_tag 'blue-color.css' %>
-        <%= stylesheet_link_tag 'style-dark.css' %>
 
 
         <!--Modernizr Js-->
@@ -65,25 +64,24 @@
                     <!--Mobile Header-->
                     <div class="header-mobile">
                         <a class="header-toggle"><i class="fas fa-bars"></i></a>
-                        <h2>Matthew Jury</h2>
+                        <a href="#home" data-turbolinks="false"> <h2>Matthew Jury</h2></a>
                     </div>
 
                     <!--Main Header-->
                     <div class="header-main" data-simplebar>
                         <div class="image-container">
                             <h2 class="header-name">Matthew Jury</h2>
-                            <img src="/img/profile-img.jpg" alt="profile-pic">
+                            <img src="img/profile-img.jpg" alt="profile-pic">
                         </div>
 
                         <!--Nav Menus-->
                         <nav class="nav-menu">
                             <ul>
-                                <li><a href="/#home" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-home"></i></span>Home </a> </li>
-                                <li><a href="/#about" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-user"></i></span>About Me</a></li>
+                                <li><a href="#home" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-home"></i></span>Home </a> </li>
+                                <li><a href="#about" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-user"></i></span>About Me</a></li>
                                 <li><a href="https://www.linkedin.com/in/matthew-jury2/"><span class="nav-menu-icon"><i class="lnr lnr-license"></i></span>Resume</a></li>
-                                <li><a href="/#portfolio" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></li>
-                                <li><a href="/#blog" class="active" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-book"></i></span>Blog</a></li>
-                                <%# <li><a href="/#contact" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-envelope"></i></span>Contact</a></li> %>
+                                <li><a href="#portfolio" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></li>
+                                <li><a href="#blog" class="pt-link active" data-turbolinks="false"><span class="nav-menu-icon"><i class="lnr lnr-book"></i></span>Blog</a></li>
                             </ul>
                         </nav>
 
@@ -110,31 +108,9 @@
                 <div class="blog-page">
                     <div class="blog-image">
                         <img src=<%= @blogpost.image_url %>  alt=""> 
-                        <%# <img src="/img/blog/blog-page-img.jpg" alt="">  %>
-                        <%# 1920x700 !!!! %>
                     </div>
                     <div class="blog-container">
                         <div class="row">
-                        <%# <strong>Title:</strong> %>
-                        <%# <%= @blogpost.title %> 
-                      <%# </p> %>
-
-                      <%# <p> %>
-                        <%# <strong>Category:</strong> %>
-                        <%# <%= @blogpost.category %> 
-                      <%# </p> %>
-
-                      <%# <p> %>
-                        <%# <strong>Image url:</strong> %>
-                        <%# <%= @blogpost.image_url %> 
-                      <%# </p> %>
-
-                      <%# <p> %>
-                        <%# <strong>Post:</strong> %>
-                        <%# <%= @blogpost.post %> 
-
-                              <%# <%= image_tag @blogpost.image_url %> 
-                      <%# </p> %>
                             <!--Blog Heading Start-->
                             <div class="blog-heading col-md-8 offset-md-2">
                                 <span class="cat">  <%= @blogpost.category %></span>
@@ -148,99 +124,6 @@
                                 <%= @blogpost.post.html_safe %>
                             </div>
                             <!--Blog Content End-->
-
-                            <%# <!--Blog Comments Start-->
-                            <div class="blog-comments col-md-8 offset-md-2">
-                                <h4 class="mb-40">Post Comments</h4>
-                                <ul class="comment-list">
-
-                                    <li class="comment">
-
-                                        <div class="author-img">
-                                            <img src="/img/blog/authors/author-1.jpg" alt="">
-                                        </div>
-                                        <div class="comment-text">
-                                            <span class="reply"><a href="#">Reply</a></span>
-                                            <h6 class="author">Jane Doe</h6>
-                                            <span class="date">June 10, 2018 at 5:39 am</span>
-                                            <p>Deep v cliche lomo biodiesel Neutra selfies. Shorts fixie consequat flexitarian four loko </p>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="comment">
-
-                                        <div class="author-img">
-                                            <img src="/img/blog/authors/author-2.jpg" alt="">
-                                        </div>
-                                        <div class="comment-text">
-                                            <span class="reply"><a href="#">Reply</a></span>
-                                            <h6 class="author">Emma Doe</h6>
-                                            <span class="date">June 10, 2018 at 5:39 am</span>
-                                            <p>Deep v cliche lomo biodiesel Neutra selfies. Shorts fixie consequat flexitarian four loko </p>
-                                        </div>
-
-                                    </li>
-
-                                    <li class="comment">
-
-                                        <div class="author-img">
-                                            <img src="/img/blog/authors/author-3.jpg" alt="">
-                                        </div>
-                                        <div class="comment-text">
-                                            <span class="reply"><a href="#">Reply</a></span>
-                                            <h6 class="author">John Doe</h6>
-                                            <span class="date">June 10, 2018 at 5:39 am</span>
-                                            <p>Deep v cliche lomo biodiesel Neutra selfies. Shorts fixie consequat flexitarian four loko </p>
-                                        </div>
-
-                                    </li>
-
-                                </ul>
-                            </div>
-                            <!--Blog Comments End--> %>
-
-                            <%# <div class="comment-form col-lg-8 offset-lg-2">
-
-                                <h4 class="mt-40 mb-40">Leave A Reply</h4>
-                                <form action="#">
-
-                                    <div class="row">
-                                        <!--Name Field-->
-                                        <div class="col-md-6 mb-50">
-                                            <span class="input">
-                                                <input class="input__field" type="text" id="name" name="name" required/>
-                                                <label class="input__label" for="name">Name</label>
-                                            </span>
-                                        </div>
-
-                                        <!--Email Field-->
-                                        <div class="col-md-6 mb-50">
-                                            <span class="input">
-                                                <input class="input__field" type="text" id="email" name="email" required/>
-                                                <label class="input__label" for="email">Email</label>
-                                            </span>
-                                        </div>
-
-                                        <!--Message Box-->
-                                        <div class="col-md-12 mb-30">
-                                            <span class="input">
-                                                <textarea  class="input__field" id="message" name="message" rows="5" required></textarea>
-                                                <label class="input__label" for="message">Your Comment</label>
-                                            </span>
-                                        </div>
-
-                                        <!--Submit Button-->
-                                        <div class="col-md-12">
-                                            <button class="btn-main">Post Comment</button>
-                                        </div>
-
-                                    </div>
-
-                                </form>
-
-                            </div> %>
-
                         </div>
                     </div>
                 </div>

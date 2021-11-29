@@ -1,13 +1,12 @@
 class BlogpostsController < ApplicationController
     before_action :set_blogpost, only: [:show, :edit, :update, :destroy]
-    http_basic_authenticate_with :name => ENV["ADMIN_USERNAME"], :password => ENV["PASSWORD"], except: :show
+    http_basic_authenticate_with :name => ENV["ADMIN_USERNAME"], :password => ENV["ADMIN_PASS"], except: :show
   
   
     # GET /blogposts
     # GET /blogposts.json
     def index
       @blogposts = Blogpost.all
-  
     end
   
     # GET /blogposts/1
