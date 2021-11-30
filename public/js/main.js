@@ -1,22 +1,3 @@
-/*****************************************************************************
-  ____                                  _____ _
- / ___|___  ___ _ __ ___   ___  ___    |_   _| |__   ___ _ __ ___   ___  ___
-| |   / _ \/ __| '_ ` _ \ / _ \/ __|_____| | | '_ \ / _ \ '_ ` _ \ / _ \/ __|
-| |__| (_) \__ \ | | | | | (_) \__ \_____| | | | | |  __/ | | | | |  __/\__ \
- \____\___/|___/_| |_| |_|\___/|___/     |_| |_| |_|\___|_| |_| |_|\___||___/
-
-******************************************************************************/
-
-/************ Site Main Js **************************************
-
-    Template Name: Jury - Resume/Vcard Template
-    Author: cosmos-themes
-    Envato Profile: https://themeforest.net/user/cosmos-themes
-    version: 1.0
-    Copyright: 2018
-
-****************************************************************/
-
 /*======== Window Load Function ========*/
 $(window).on('load', function() {
 
@@ -68,6 +49,15 @@ $(document).ready(function() {
         new SimpleBar($($id)[0]);
     });
 
+    $(document).on('mouseup', function (e) {
+        var headerContainer = $('.header-main');
+
+        if (!headerContainer.is(e.target) && headerContainer.has(e.target).length === 0 && $(e.target).closest('.header-toggle').length === 0) {
+            $('.header-content').removeClass('on');
+        }
+
+    });
+
     /*======== Fitty Setup ========*/
     fitty('.header-name', {
         multiLine: false,
@@ -84,7 +74,9 @@ $(document).ready(function() {
 
     /*======== Mobile Toggle Click Setup ========*/
     $('.header-toggle').on('click', function() {
-        $('header .header-content').toggleClass('on');
+
+        $('.header-content').toggleClass('on');
+
     });
 
     /*========Clients OwlCarousel Setup========*/
@@ -117,9 +109,9 @@ $(document).ready(function() {
         loop: true,
         margin: 30,
         autoplay: true,
-        smartSpeed: 1000,
+        smartSpeed: 500,
         responsiveClass: true,
-        dots: true,
+        dots: false,
         autoplayHoverPause: true,
         responsive: {
             0: {
@@ -179,23 +171,6 @@ $(document).ready(function() {
             });
         }
     }
-
-    /*======== Portfolio Image Link Setup ========*/
-    $('.portfolio-items .image-link').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
-
-    /*======== Portfolio Video Link Setup ========*/
-    $('.portfolio-items .video-link').magnificPopup({
-        type: 'iframe',
-        gallery: {
-            enabled: true
-        }
-    });
-
     /*======== Portfolio Ajax Link Setup ========*/
     ajaxPortfolioSetup($('.portfolio-items .ajax-link'), $('.ajax-portfolio-popup'));
 
@@ -330,7 +305,7 @@ function contactFormSetup() {
         if( required === 0 ) {
             $.ajax({
                 type: 'POST',
-                url: '/mail.php',
+                url: 'mail.php',
                 data: {
                     cf_name: name,
                     cf_email: email,
