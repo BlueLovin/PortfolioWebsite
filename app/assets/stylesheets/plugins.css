@@ -1,6 +1,6 @@
-@import url('plugins/bootstrap.css');
-@import url('plugins/font-awesome.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css');
 @import url('plugins/animations.css');
 @import url('plugins/linear-icons.css');
-@import url('plugins/jquery.animatedheadline.css');
-@import url('plugins/owl.carousel.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');

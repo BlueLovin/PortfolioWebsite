@@ -1,543 +1,491 @@
 <!DOCTYPE html>
 <html lang="en" data-random-animation="false" data-animation="11">
-    <head>
-        <!--Meta Tags-->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
-        <!--Page Title-->
-        <title>Matthew Jury's Resume</title>
-
-        <!--Plugins Css-->
-        <%= stylesheet_link_tag 'plugins.css' %>
-        <!--Main Styles Css-->
-        <%# <link rel="stylesheet" href="css/style-dark.css"> %>
-        <%= stylesheet_link_tag 'style-dark.css' %>
-
-        <!--Color Css-->
-        <%# <link rel="stylesheet" href="css/blue-color.css"> %>
-        <%= stylesheet_link_tag 'blue-color.css' %>
-
-
-        <!--Modernizr Js-->
-        <script src="js/modernizr.js"></script>
-        <%# <%= javascript_pack_tag 'modernizr.js' %> %>
-
-        <!--Favicons-->
-        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-
-    </head>
-
-    <body>
-
-        <!--Preloader Start-->
-        <div class="preloader">
-            <div class="loader">
-                <!--Your Name-->
-                <h4>Matthew Jury</h4>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+  <head>
+    <!--Meta Tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!--Page Title-->
+    <title>Matthew Jury's Resume</title>
+    <!--Plugins Css-->
+    <%= stylesheet_link_tag 'plugins.css' %>
+    <!--Main Styles Css-->
+    <%# <link rel="stylesheet" href="css/style-dark.css"> %>
+    <%= stylesheet_link_tag 'style-dark.css' %>
+    <!--Color Css-->
+    <%# <link rel="stylesheet" href="css/blue-color.css"> %>
+    <%= stylesheet_link_tag 'blue-color.css' %>
+    <!--Modernizr Js-->
+    <script src="js/modernizr.js"></script>
+    <%# <%= javascript_pack_tag 'modernizr.js' %> %>
+    <!--Favicons-->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!--Preloader Start-->
+    <div class="preloader">
+      <div class="loader">
+        <!--Your Name-->
+        <h4>Matthew Jury</h4>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!--Preloader End-->
+    <div id="page">
+      <!--Header Start-->
+      <header>
+        <div class="header-content">
+          <!--Mobile Header-->
+          <div class="header-mobile">
+            <a class="header-toggle"><i class="fas fa-bars"></i></a>
+            <a href="#home" data-turbolinks="false"> 
+              <h2>Matthew Jury</h2>
+            </a>
+          </div>
+          <!--Main Header-->
+          <div class="header-main" data-simplebar>
+            <div class="image-container">
+              <h2 class="header-name">Matthew Jury</h2>
+              <img src="img/profile-img.jpg" alt="profile-pic">
             </div>
+            <!--Nav Menus-->
+            <nav class="nav-menu">
+              <ul>
+                <li><a href="#home" data-turbolinks="false" class="pt-link active"><span class="nav-menu-icon"><i class="lnr lnr-home"></i></span>Home </a> </li>
+                <li><a href="#about" data-turbolinks="false" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-user"></i></span>About Me</a></li>
+                <li><a href="https://www.linkedin.com/in/matthew-jury2/" target="_blank"><span class="nav-menu-icon"><i class="lnr lnr-license"></i></span>Resume</a></li>
+                <li><a href="#portfolio" data-turbolinks="false" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></li>
+                <li><a href="#blog" data-turbolinks="false" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-book"></i></span>Blog</a></li>
+              </ul>
+            </nav>
+            <!--Nav Footer-->
+            <div class="nav-footer">
+              <!--Social Links-->
+              <ul class="social">
+                <li><a href="https://www.youtube.com/channel/UCJOOPdpk7Ne4WL7qdpul-6w/videos" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+                <li><a href="https://github.com/bluelovin" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="https://www.last.fm/user/matthewjury" target="_blank"><i class="fab fa-lastfm-square"></i></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <!--Preloader End-->
-
-        <div id="page">
-
-            <!--Header Start-->
-            <header>
-                <div class="header-content">
-                    <!--Mobile Header-->
-                    <div class="header-mobile">
-                        <a class="header-toggle"><i class="fas fa-bars"></i></a>
-                        <a href="#home" data-turbolinks="false"> <h2>Matthew Jury</h2></a>
-                    </div>
-
-                    <!--Main Header-->
-                    <div class="header-main" data-simplebar>
-                        <div class="image-container">
-                            <h2 class="header-name">Matthew Jury</h2>
-                            <img src="img/profile-img.jpg" alt="profile-pic">
-                        </div>
-
-                        <!--Nav Menus-->
-                        <nav class="nav-menu">
-                            <ul>
-                                <li><a href="#home" data-turbolinks="false" class="pt-link active"><span class="nav-menu-icon"><i class="lnr lnr-home"></i></span>Home </a> </li>
-                                <li><a href="#about" data-turbolinks="false" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-user"></i></span>About Me</a></li>
-                                <li><a href="https://www.linkedin.com/in/matthew-jury2/" target="_blank"><span class="nav-menu-icon"><i class="lnr lnr-license"></i></span>Resume</a></li>
-                                <li><a href="#portfolio" data-turbolinks="false" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></li>
-                                <li><a href="#blog" data-turbolinks="false" class="pt-link"><span class="nav-menu-icon"><i class="lnr lnr-book"></i></span>Blog</a></li>
-                            </ul>
-                        </nav>
-
-                        <!--Nav Footer-->
-                        <div class="nav-footer">
-                            <!--Social Links-->
-                            <ul class="social">
-                                <li><a href="https://www.youtube.com/channel/UCJOOPdpk7Ne4WL7qdpul-6w/videos" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
-                                <li><a href="https://github.com/bluelovin" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                                <li><a href="https://www.last.fm/user/matthewjury" target="_blank"><i class="fab fa-lastfm-square"></i></a></li>
-                            </ul>
-                        </div>
-
-                    </div>
+      </header>
+      <!--Header End-->
+      <!--Main Start-->
+      <div id="main" class="site-main">
+        <!--Banner Section Start-->
+        <section id="home" class="banner-section pt-page" style="background-image: url('img/background/home-bg.jpg')">
+          <!--Particle Container-->
+          <div id="particles-js"></div>
+          <div class="banner-content">
+            <!--Banner Text-->
+            <h1 class="mb-20">Matthew <span>Jury</span></h1>
+            <!--Animated Text-->
+            <p class="cd-headline clip is-full-width">
+              <span>I am a </span>
+              <span class="cd-words-wrapper">
+                <b class="is-visible">Full Stack Developer</b>
+                <b>Software Engineer</b>
+                <b>Tech Enthusiast</b>
+                <b>Linux Power User</b>
+                <b>Boxing Fanatic</b>
+              </span>
+            </p>
+          </div>
+        </section>
+        <!--Banner Section End-->
+        <!--About Section Start-->
+        <section id="about" class="about-section pt-page">
+          <div class="section-container">
+            <!--Page Heading-->
+            <div class="page-heading">
+              <span class="icon"><i class="lnr lnr-user"></i></span>
+              <h2>About Me.</h2>
+            </div>
+            <!-- About Info Row Start-->
+            <div class="row about mb-70">
+              <div class="col-lg-8">
+                <!--Personal Intro-->
+                <h3 class="mb-20">Full Stack Developer</h3>
+                <p>I first started programming when I was 
+                  only 13 years old, when I used to make maps for the 1993 game "DOOM". 
+                  It introduced me to variables, looping, and even design principles.</p>
+                <p>Currently I am a Software Developer at ECI Solutions.</p>
+                <p>I have always been interested in computers and could talk all day about technology. I always love
+                  watching a project come together and playing a major role in it.</p>
+                <!--Signature Image-->
+                <div class="signature mt-20">
+                  <img src="img/signature-white.png" alt="">
                 </div>
-            </header>
-            <!--Header End-->
-
-
-            <!--Main Start-->
-            <div id="main" class="site-main">
-
-
-                <!--Banner Section Start-->
-                <section id="home" class="banner-section pt-page" style="background-image: url('img/background/home-bg.jpg')">
-
-                    <!--Particle Container-->
-                    <div id="particles-js"></div>
-
-                    <div class="banner-content">
-                        <!--Banner Text-->
-                        <h1 class="mb-20">Matthew <span>Jury</span></h1>
-
-                        <!--Animated Text-->
-                        <p class="cd-headline clip is-full-width">
-                        <span>I am a </span>
-                        <span class="cd-words-wrapper">
-                            <b class="is-visible">Full Stack Developer</b>
-                            <b>Software Engineer</b>
-                            <b>Tech Enthusiast</b>
-                            <b>Linux Power User</b>
-                            <b>Boxing Fanatic</b>
-                        </span>
-                        </p>
-
-                    </div>
-
-                </section>
-                <!--Banner Section End-->
-
-
-                <!--About Section Start-->
-                <section id="about" class="about-section pt-page">
-                    <div class="section-container">
-                        <!--Page Heading-->
-                        <div class="page-heading">
-                            <span class="icon"><i class="lnr lnr-user"></i></span>
-                            <h2>About Me.</h2>
-                        </div>
-
-                        <!-- About Info Row Start-->
-                        <div class="row about mb-70">
-
-                            <div class="col-lg-8">
-                                <!--Personal Intro-->
-                                <h3 class="mb-20">Full Stack Developer</h3>
-                                <p>I first started programming when I was 
-                                    only 13 years old, when I used to make maps for the 1993 game "DOOM". 
-                                    It introduced me to variables, looping, and even design principles.</p>
-
-                                <p>Currently I am a Software Developer at Trinam Drafting and Design.</p>
-
-                                <p>I have always been interested in computers and could talk all day about technology. I always love
-                                    watching a project come together and playing a major role in it.</p>
-
-                                <!--Signature Image-->
-                                <div class="signature mt-20">
-                                    <img src="img/signature-white.png" alt="">
-                                </div>
-                            </div>
-
-                            <!--Personal Info-->
-                            <div class="col-lg-4">
-                                <div class="about-info">
-                                    <h3 class="mb-20">Personal Information</h3>
-                                    <ul>
-                                        <li><span class="title">Name</span><span class="value">Matthew Jury</span></li>
-                                        <li><span class="title">Residence</span><span class="value">Columbus, GA, USA</span></li>
-                                        <li><span class="title">Company</span><span class="value">Trinam Drafting and Design</span></li>
-                                        <li><span class="title">Experienced in</span><span class="value">React, Django, C#,</span> <span class="value"> C/C++, Python, Linux</span></li>
-                                        <li><span class="title">Skills</span><span class="value">Great interpersonal skills</span> <span class="value"> Communication, Leadership, Guitar</span> <span class="value">Video Editing, Writing</span></li>
-                                    </ul>
-                                    <div class="resume-button mt-30">
-                                        <a class="btn-main" href="/downloads/resume" download="Matthew Jury Resume.pdf">Download Resume</a> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- About Info Row End-->
-
-                        <!--Services Row Start-->
-                        <div class="row services mb-30">
-                            <div class="col-md-12">
-                                <div class="subheading">
-                                    <h3>Skills and Interests</h3>
-                                </div>
-                            </div>
-
-                            <!--Service Item-->
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="service-item">
-                                    <div class="icon"><i class="fas fa-code"></i></div>
-                                    <h4>Frontend Development</h4>
-                                    <p>Has work experience with class based React and React Hooks, Vue.JS, and Angular</p>
-                                </div>
-                            </div>
-
-                            <!--Service Item-->
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="service-item">
-                                    <div class="icon"><i class="fas fa-microchip"></i></div>
-                                    <h4>Backend Engineering</h4>
-                                    <p>Experience creating software APIs and REST APIs. Has worked with Django, Spring, and .NET</p>
-                                </div>
-                            </div>
-
-                            <!--Service Item-->
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="service-item">
-                                    <div class="icon"><i class="fas fa-film"></i></div>
-                                    <h4>Video Editing</h4>
-                                    <p>Have been using Premiere Pro and After Effects for 10+ years. Has a true love for film and greatly enjoys the process of a film coming together.</p>
-                                </div>
-                            </div>
-
-                            <!--Service Item-->
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="service-item">
-                                    <span class="iconify icon" data-icon="mdi-boxing-glove" data-inline="false"></span>                                    
-                                    <h4>Boxing</h4>
-                                    <p>Could talk endlessly about boxing, from any era. Wishes that Spence and Crawford would just fight each other!</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Testimonials Row Start-->
-                        <div class="row testimonials mb-50">
-                            <div class="col-md-12">
-                                <div class="subheading">
-                                    <h3>Recommendations</h3>
-                                </div>
-                                <div class="owl-carousel owl-theme">
-                                    <!--Testimonial Item-->
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <p>
-                                            Matt is an exceptional worker and is committed to finding a solution to whatever problem he is faced with on the job. Matt quickly learned all of the ins and outs of the product and industry. He was able to apply his knowledge from personal projects to his work, which helped the entire team. Matt has been known to take charge of a situation when needed, and has never disappointed in his submitted work. Matt would make a great addition to any team that he finds himself on in the future.                                            
-                                            </p>
-                                        </div>
-                                        <div class="testimonial-meta">
-                                            <img src="img/testimonials/author-4.jpg" alt="">
-                                            <div class="meta-info">
-                                                <h4>Cris Santiago</h4>
-                                                <p>Former Manager, Software Developer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Testimonial Item-->
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <p>During the time that I got to work with Matt, he proved himself very hard-working and
-                                                dependable. He puts in many hours to help our team advance... I would always give Matt the 
-                                                most important tasks, because I know that he was capable of handling them. I also knew that
-                                                if he was not knowledgeable on certain subject, that he would take the extra step of learning
-                                                them on his own before reaching out to others.</p>
-                                        </div>
-                                        <div class="testimonial-meta">
-                                            <img src="img/testimonials/author-3.jpg" alt="">
-                                            <div class="meta-info">
-                                                <h4>Sopheap Chea</h4>
-                                                <p>Former Coworker, Software Developer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Testimonial Item-->
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <p>
-                                                Matt is a great problem solver, which makes him excellent at programming.
-                                                He is highly skilled in C++ and has contributed greatly to the team that
-                                                he is part of. His friendly personality makes him very approachable for 
-                                                any help. He will be great addition to any team he works with.
-                                            </p>
-                                        </div>
-                                        <div class="testimonial-meta">
-                                            <img src="img/testimonials/author-1.jpg" alt="">
-                                            <div class="meta-info">
-                                                <h4>Mun San Bhujel</h4>
-                                                <p>Former Coworker, Backend Engineer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <p>I've had the opportunity to work as a mentor to Matthew for the past year, 
-                                            and I am genuinely impressed with his work ethic, desire to learn, and passion 
-                                            for technology. Matthew is a problem solver of the highest caliber, and I've 
-                                            yet to present him with a challenge he couldn't overcome. While the full-stack
-                                            developer is a rare breed, I believe Matthew is a shining example. He's got 
-                                            solid database fundamentals, and considers scale from the beginning of every
-                                            project. I can't wait to see what he accomplishes in his career.</p>
-                                        </div>
-                                        <div class="testimonial-meta">
-                                            <img src="img/testimonials/author-5.jpg" alt="">
-                                            <div class="meta-info">
-                                                <h4>Seth Centerbar</h4>
-                                                <p>Mentor, Software Engineer at Apple</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Testimonial Item-->
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <p>
-                                                Matt is a great team player,  has solid software and web development skills,
-                                                and he is just a pleasure to be around. Matthew is an all around hard working
-                                                individual with drive and determination, and would perform well 
-                                                in any development team.
-                                            </p>
-                                        </div>
-                                        <div class="testimonial-meta">
-                                            <img src="img/testimonials/author-2.jpg" alt="">
-                                            <div class="meta-info">
-                                                <h4>Caleb Corbin</h4>
-                                                <p>Friend, Frontend Developer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    
-
-                                </div>
-                            </div>
-                            <!--Testimonials Row End-->
-
-                        </div>
-                    </div>
-                </section>
-
-                <!--Porfolio Section Start-->
-                <section id="portfolio" class="portfolio-section pt-page">
-                    <div class="section-container">
-                        <!--Page Heading-->
-                        <div class="page-heading">
-                            <span class="icon"><i class="lnr lnr-briefcase"></i></span>
-                            <h2>Portfolio.</h2>
-                        </div>
-                    <blockquote class="text-center">
-                        Aside from many open-source contributions, here is a few projects of mine. Feel free to visit the releases section of any of these projects on my GitHub, and try them for yourself! 
-                        <br/><br/>
-                        <a href="https://www.github.com/bluelovin/">Click here to visit my GitHub!</a>
-                    </blockquote>
-
-                        <div class="row">
-                            <!--Portfolio Filter-->
-                            <div class="col-md-12 portfolio-filter text-center">
-                                <ul>
-                                    <li class="active" data-filter="*">All</li>
-                                    <li data-filter=".desktop">Desktop</li>
-                                    <li data-filter=".web">Web</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!--Portfolio Items-->
-                        <div class="row portfolio-items mb-50">
-
-                            <!--Portfolio Item-->
-                            <div class="item col-lg-4 col-sm-6 brand desktop">
-                                <a class="video-link" href="https://www.youtube.com/watch?v=0T0niF_2MNA">
-                                    <figure>
-                                        <img src="img/portfolio/tetris.png" alt="">
-                                        <figcaption>
-                                            <h4>Tetris</h4>
-                                            <p>C# MonoGame Project</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                            <!--Portfolio Item-->
-                            <div class="item col-lg-4 col-sm-6 web">
-                                <a href="/BudgetCalculator/" target="_blank">
-                                    <figure>
-                                        <img src="img/portfolio/budgetcalc.png" alt="">
-                                        <figcaption>
-                                            <h4>Budget Calculator</h4>
-                                            <p>React.JS Project</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <!--Portfolio Item-->
-                            <div class="item col-lg-4 col-sm-6 web">
-                                <a href="http://ilovegenesis.com/" target="_blank">
-                                    <figure>
-                                        <img src="img/portfolio/genesiswebsite.png" alt="">
-                                        <figcaption>
-                                            <h4>ILoveGenesis.com</h4>
-                                            <p>React.JS Project</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <!--Portfolio Item-->
-                            <div class="item col-lg-4 col-sm-6 desktop">
-                                <a href="https://github.com/BlueLovin/SDL-Particle-Kaboom" target="_blank">
-                                    <figure>
-                                        <img src="img/portfolio/kaboom.gif" alt="">
-                                        <figcaption>
-                                            <h4>Particle Kaboom!</h4>
-                                            <p>C++/SDL Project</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <!--Portfolio Item-->
-                            <div class="item col-lg-4 col-sm-6 desktop">
-                                <a class="video-link" href="https://www.youtube.com/watch?v=tN8iLHRwE0w">
-                                    <figure>
-                                        <img src="img/portfolio/flappydante.png" alt="">
-                                        <figcaption>
-                                            <h4>Flappy Dante</h4>
-                                            <p>C# MonoGame Project</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <!--Portfolio Item-->
-                            <div class="item col-lg-4 col-sm-6 web">
-                                <a href="https://github.com/BlueLovin/VisitEcuador.com/" target="_blank">
-                                    <figure>
-                                        <img src="img/portfolio/ecuador.png" alt="">
-                                        <figcaption>
-                                            <h4>Visit Ecuador.com!</h4>
-                                            <p>Website made with Flask and MySQL,</p> 
-                                            <p>(working on deploying back to Heroku)</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                             
-
-                            <!--Portfolio Item-->
-                            <div class="item col-lg-4 col-sm-6 desktop">
-                                <a class="video-link" href="https://www.youtube.com/watch?v=-i8XsI7oofE">
-                                    <figure>
-                                        <img src="img/portfolio/connect4.png" alt="">
-                                        <figcaption>
-                                            <h4>Connect 4</h4>
-                                            <p>C# WinForms App</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <!--Portfolio Item-->
-                            <div class="item col-lg-4 col-sm-6 desktop">
-                                <a href="https://github.com/BlueLovin/SnackMachine" target="_blank">
-                                    <figure>
-                                        <img src="img/portfolio/snackmachine.png" alt="">
-                                        <figcaption>
-                                            <h4>Snack Machine</h4>
-                                            <p>C++/Linux Console Application</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <!--Portfolio Item-->
-                            <div class="item col-lg-4 col-sm-6 desktop">
-                                <a href="https://github.com/BlueLovin/TicTacToe" target="_blank">
-                                    <figure>
-                                        <img src="img/portfolio/tictactoe.png" alt="">
-                                        <figcaption>
-                                            <h4>TicTacToe</h4>
-                                            <p>C# WinForms</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-
-                            <!--Portfolio Item-->
-                            <div class="item col-lg-4 col-sm-6 design desktop">
-                                <a href="https://github.com/BlueLovin/SnakeGame" target="_blank">
-                                    <figure>
-                                        <img src="img/portfolio/snakegame.png" alt="">
-                                        <figcaption>
-                                            <h4>Snake Game</h4>
-                                            <p>C# WinForms</p>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!--Porfolio Section End-->
-
-
-                <!--Blog Section Start-->
-                <section id="blog" class="blog-section pt-page">
-                    <div class="section-container">
-
-                        <!--Page Heading-->
-                        <div class="page-heading">
-                            <span class="icon"><i class="lnr lnr-book"></i></span>
-                            <h2>My Blog About Literally Anything.</h2>
-                        </div>
-                        <div class="row blogs-masonry">
-                            <% @blogposts.reverse.each do |posts| %>
-                            <div class="col-lg-4 col-sm-6">
-                                <a href=<%= "/blogposts/#{posts.id}" %> data-turbolinks="false" class="blog-item">
-                                    <div class="blog-image">
-                                        <img src=<%=posts.thumbnail_url%> alt="#">
-                                    </div>
-                                    <div class="blog-content">
-                                        <span class="cat"><%= posts.category %></span>
-                                        <h4 class="blog-title"><%= posts.title %></h4>
-                                        <div class="blog-date"><%= posts.created_at %></div>
-                                    </div>
-                                </a>
-                            </div>
-                            <% end %>
-
-
-                        </div>
-                    </div>
-                </section>
+              </div>
+              <!--Personal Info-->
+              <div class="col-lg-4">
+                <div class="about-info">
+                  <h3 class="mb-20">Personal Information</h3>
+                  <ul>
+                    <li><span class="title">Name</span><span class="value">Matthew Jury</span></li>
+                    <li><span class="title">Residence</span><span class="value">Columbus, GA, USA</span></li>
+                    <li><span class="title">Company</span><span class="value">ECI Solutions</span></li>
+                    <li><span class="title">Experienced in</span><span class="value">React, Django, C#,</span> <span class="value"> C/C++, Python, Linux</span></li>
+                    <li><span class="title">Skills</span><span class="value">Great interpersonal skills</span> <span class="value"> Communication, Leadership, Guitar</span> <span class="value">Video Editing, Writing</span></li>
+                  </ul>
+                  <div class="resume-button mt-30">
+                    <a class="btn-main" href="/downloads/resume" download="Matthew Jury Resume.pdf">Download Resume</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!--Main End-->
-
-        </div>
-
-        <!--Jquery JS-->
-        <script src="js/jquery.min.js"></script>
-        <!--Plugins JS-->
-          <script src="js/plugins.min.js"></script>
-        <!--Site Main JS-->
-        <script src="js/main.js"></script>
-        <script>
-            //Particles
-            particlesJS.load('particles-js', 'js/particles1.json', function() {
-                console.log('callback - particles.js config loaded');
-            });
-        </script>
-    </body>
+            <!-- About Info Row End-->
+            <!--Services Row Start-->
+            <div class="row services mb-30">
+              <div class="col-md-12">
+                <div class="subheading">
+                  <h3>Skills and Interests</h3>
+                </div>
+              </div>
+              <!--Service Item-->
+              <div class="col-lg-3 col-sm-6">
+                <div class="service-item">
+                  <div class="icon"><i class="fas fa-code"></i></div>
+                  <h4>Frontend Development</h4>
+                  <p>Has work experience with class based React and React Hooks, Vue.JS, and Angular</p>
+                </div>
+              </div>
+              <!--Service Item-->
+              <div class="col-lg-3 col-sm-6">
+                <div class="service-item">
+                  <div class="icon"><i class="fas fa-microchip"></i></div>
+                  <h4>Backend Engineering</h4>
+                  <p>Experience creating software APIs and REST APIs. Has worked with Django, Spring, and .NET</p>
+                </div>
+              </div>
+              <!--Service Item-->
+              <div class="col-lg-3 col-sm-6">
+                <div class="service-item">
+                  <div class="icon"><em class="fas fa-film"></em></div>
+                  <h4>Video Editing</h4>
+                  <p>Have been using Premiere Pro and After Effects for 10+ years. Has a true love for film and greatly enjoys the process of a film coming together.</p>
+                </div>
+              </div>
+              <!--Service Item-->
+              <div class="col-lg-3 col-sm-6">
+                <div class="service-item">
+                  <span class="iconify icon" data-icon="mdi-boxing-glove" data-inline="false"></span>
+                  <h4>Boxing</h4>
+                  <p>Could talk endlessly about boxing, from any era. Wishes that Spence and Crawford would just fight each other!</p>
+                </div>
+              </div>
+            </div>
+            <!--Testimonials Row Start-->
+            <div class="row testimonials mb-50">
+              <div class="col-md-12">
+                <div class="subheading">
+                  <h3>Recommendations</h3>
+                </div>
+                <div class="owl-carousel owl-theme">
+                  <!--Testimonial Item-->
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <p>
+                        Matt is an exceptional worker and is committed to finding a solution to whatever problem he is faced with on the job. Matt quickly learned all of the ins and outs of the product and industry. He was able to apply his knowledge from personal projects to his work, which helped the entire team. Matt has been known to take charge of a situation when needed, and has never disappointed in his submitted work. Matt would make a great addition to any team that he finds himself on in the future.                                            
+                      </p>
+                    </div>
+                    <div class="testimonial-meta">
+                      <img src="img/testimonials/author-4.jpg" alt="">
+                      <div class="meta-info">
+                        <h4>Cris Santiago</h4>
+                        <p>Former Manager, Software Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <p>
+                        I have had the pleasure of working with Matthew.  He has shown to be innovative and hardworking.  He had a way of listening to what I needed, deciphering my cumbersome description and writing code that worked perfectly.  He and I also share a love of boxing and international cuisines.  He is truly a unique person that I call a colleague and friend.  I look forward to seeing what he conquers next.                                   
+                      </p>
+                    </div>
+                    <div class="testimonial-meta">
+                      <img src="img/testimonials/author-6.jpg" alt="">
+                      <div class="meta-info">
+                        <h4>Stephanie Beluk</h4>
+                        <p>Former Coworker, Revit Engineer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Testimonial Item-->
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <p>During the time that I got to work with Matt, he proved himself very hard-working and
+                        dependable. He puts in many hours to help our team advance... I would always give Matt the 
+                        most important tasks, because I know that he was capable of handling them. I also knew that
+                        if he was not knowledgeable on certain subject, that he would take the extra step of learning
+                        them on his own before reaching out to others.</p>
+                    </div>
+                    <div class="testimonial-meta">
+                      <img src="img/testimonials/author-3.jpg" alt="">
+                      <div class="meta-info">
+                        <h4>Sopheap Chea</h4>
+                        <p>Former Coworker, Software Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Testimonial Item-->
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <p>
+                        Matt is a great problem solver, which makes him excellent at programming.
+                        He is highly skilled in C++ and has contributed greatly to the team that
+                        he is part of. His friendly personality makes him very approachable for 
+                        any help. He will be great addition to any team he works with.
+                      </p>
+                    </div>
+                    <div class="testimonial-meta">
+                      <img src="img/testimonials/author-1.jpg" alt="">
+                      <div class="meta-info">
+                        <h4>Mun San Bhujel</h4>
+                        <p>Former Coworker, Backend Engineer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <p>I've had the opportunity to work as a mentor to Matthew for the past year, 
+                        and I am genuinely impressed with his work ethic, desire to learn, and passion 
+                        for technology. Matthew is a problem solver of the highest caliber, and I've 
+                        yet to present him with a challenge he couldn't overcome. While the full-stack
+                        developer is a rare breed, I believe Matthew is a shining example. He's got 
+                        solid database fundamentals, and considers scale from the beginning of every
+                        project. I can't wait to see what he accomplishes in his career.</p>
+                    </div>
+                    <div class="testimonial-meta">
+                      <img src="img/testimonials/author-5.jpg" alt="">
+                      <div class="meta-info">
+                        <h4>Seth Centerbar</h4>
+                        <p>Mentor, Software Engineer at Apple</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Testimonial Item-->
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <p>
+                        Matt is a great team player,  has solid software and web development skills,
+                        and he is just a pleasure to be around. Matthew is an all around hard working
+                        individual with drive and determination, and would perform well 
+                        in any development team.
+                      </p>
+                    </div>
+                    <div class="testimonial-meta">
+                      <img src="img/testimonials/author-2.jpg" alt="">
+                      <div class="meta-info">
+                        <h4>Caleb Corbin</h4>
+                        <p>Friend, Frontend Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Testimonials Row End-->
+            </div>
+          </div>
+        </section>
+        <!--Porfolio Section Start-->
+        <section id="portfolio" class="portfolio-section pt-page">
+          <div class="section-container">
+            <!--Page Heading-->
+            <div class="page-heading">
+              <span class="icon"><i class="lnr lnr-briefcase"></i></span>
+              <h2>Portfolio.</h2>
+            </div>
+            <blockquote class="text-center">
+              Aside from many open-source contributions, here is a few projects of mine. Feel free to visit the releases section of any of these projects on my GitHub, and try them for yourself! 
+              <br/>
+              <br/>
+              <a href="https://www.github.com/bluelovin/">Click here to visit my GitHub!</a>
+            </blockquote>
+            <div class="row">
+              <!--Portfolio Filter-->
+              <div class="col-md-12 portfolio-filter text-center">
+                <ul>
+                  <li class="active" data-filter="*">All</li>
+                  <li data-filter=".desktop">Desktop</li>
+                  <li data-filter=".web">Web</li>
+                </ul>
+              </div>
+            </div>
+            <!--Portfolio Items-->
+            <div class="row portfolio-items mb-50">
+              <!--Portfolio Item-->
+              <div class="item col-lg-4 col-sm-6 brand desktop">
+                <a class="video-link" href="https://www.youtube.com/watch?v=0T0niF_2MNA">
+                  <figure>
+                    <img src="img/portfolio/tetris.png" alt="">
+                    <figcaption>
+                      <h4>Tetris</h4>
+                      <p>C# MonoGame Project</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--Portfolio Item-->
+              <div class="item col-lg-4 col-sm-6 web">
+                <a href="/BudgetCalculator/" target="_blank">
+                  <figure>
+                    <img src="img/portfolio/budgetcalc.png" alt="">
+                    <figcaption>
+                      <h4>Budget Calculator</h4>
+                      <p>React.JS Project</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--Portfolio Item-->
+              <div class="item col-lg-4 col-sm-6 web">
+                <a href="http://ilovegenesis.com/" target="_blank">
+                  <figure>
+                    <img src="img/portfolio/genesiswebsite.png" alt="">
+                    <figcaption>
+                      <h4>ILoveGenesis.com</h4>
+                      <p>React.JS Project</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--Portfolio Item-->
+              <div class="item col-lg-4 col-sm-6 desktop">
+                <a href="https://github.com/BlueLovin/SDL-Particle-Kaboom" target="_blank">
+                  <figure>
+                    <img src="img/portfolio/kaboom.gif" alt="">
+                    <figcaption>
+                      <h4>Particle Kaboom!</h4>
+                      <p>C++/SDL Project</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--Portfolio Item-->
+              <div class="item col-lg-4 col-sm-6 desktop">
+                <a class="video-link" href="https://www.youtube.com/watch?v=tN8iLHRwE0w">
+                  <figure>
+                    <img src="img/portfolio/flappydante.png" alt="">
+                    <figcaption>
+                      <h4>Flappy Dante</h4>
+                      <p>C# MonoGame Project</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--Portfolio Item-->
+              <div class="item col-lg-4 col-sm-6 web">
+                <a href="https://github.com/BlueLovin/VisitEcuador.com/" target="_blank">
+                  <figure>
+                    <img src="img/portfolio/ecuador.png" alt="">
+                    <figcaption>
+                      <h4>Visit Ecuador.com!</h4>
+                      <p>Website made with Flask and MySQL,</p>
+                      <p>(working on deploying back to Heroku)</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--Portfolio Item-->
+              <div class="item col-lg-4 col-sm-6 desktop">
+                <a class="video-link" href="https://www.youtube.com/watch?v=-i8XsI7oofE">
+                  <figure>
+                    <img src="img/portfolio/connect4.png" alt="">
+                    <figcaption>
+                      <h4>Connect 4</h4>
+                      <p>C# WinForms App</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--Portfolio Item-->
+              <div class="item col-lg-4 col-sm-6 desktop">
+                <a href="https://github.com/BlueLovin/SnackMachine" target="_blank">
+                  <figure>
+                    <img src="img/portfolio/snackmachine.png" alt="">
+                    <figcaption>
+                      <h4>Snack Machine</h4>
+                      <p>C++/Linux Console Application</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--Portfolio Item-->
+              <div class="item col-lg-4 col-sm-6 desktop">
+                <a href="https://github.com/BlueLovin/TicTacToe" target="_blank">
+                  <figure>
+                    <img src="img/portfolio/tictactoe.png" alt="">
+                    <figcaption>
+                      <h4>TicTacToe</h4>
+                      <p>C# WinForms</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <!--Portfolio Item-->
+              <div class="item col-lg-4 col-sm-6 design desktop">
+                <a href="https://github.com/BlueLovin/SnakeGame" target="_blank">
+                  <figure>
+                    <img src="img/portfolio/snakegame.png" alt="">
+                    <figcaption>
+                      <h4>Snake Game</h4>
+                      <p>C# WinForms</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Porfolio Section End-->
+        <!--Blog Section Start-->
+        <section id="blog" class="blog-section pt-page">
+          <div class="section-container">
+            <!--Page Heading-->
+            <div class="page-heading">
+              <span class="icon"><i class="lnr lnr-book"></i></span>
+              <h2>My Blog About Literally Anything.</h2>
+            </div>
+            <div class="row blogs-masonry">
+              <% @blogposts.reverse.each do |posts| %>
+                <div class="col-lg-4 col-sm-6">
+                  <a href=<%= "/blogposts/#{posts.id}" %> data-turbolinks="false" class="blog-item">
+                    <div class="blog-image">
+                      <img src=<%=posts.thumbnail_url%> alt="#">
+                    </div>
+                    <div class="blog-content">
+                      <span class="cat"><%= posts.category %></span>
+                      <h4 class="blog-title"><%= posts.title %></h4>
+                      <div class="blog-date"><%= posts.created_at %></div>
+                    </div>
+                  </a>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--Main End-->
+    </div>
+    <!--Jquery JS-->
+    <script src="js/jquery.min.js"></script>
+    <!--Plugins JS-->
+    <script src="js/plugins.min.js"></script>
+    <!--Site Main JS-->
+    <script src="js/main.js"></script>
+    <script>
+      //Particles
+      particlesJS.load('particles-js', 'js/particles1.json', function() {
+          console.log('callback - particles.js config loaded');
+      });
+    </script>
+  </body>
 </html>
-
-

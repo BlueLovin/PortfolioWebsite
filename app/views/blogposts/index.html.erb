@@ -1,7 +1,5 @@
 <p id="notice"><%= notice %></p>
-
 <h1>Posts</h1>
-
 <table>
   <thead>
     <tr>
@@ -12,7 +10,6 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody>
     <% @blogposts.each do |blogpost| %>
       <tr>
@@ -26,7 +23,5 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
-
 <%= link_to 'New Blogpost', new_blogpost_path %>
